@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+:root {
+  --bgc-Color: #141d2f;
+  --text-Color: white;
+  --link: #0079ff;
+  --bgc-color: #1e2a47;
+  --sun: #90a4d4;
+  --variable1: #fff;
+  --variable2: #141d2f;
+}
+
+.dark-theme {
+  --bgc-Color: #f6f8ff;
+  --text-Color: white;
+  --bgc-color: #1e2a47;
+  --variable1: #fff;
+  --variable2: #141d2f;
+}
+
+body {
+  transition: all 0.1s;
+  background-color: var(--bgc-Color);
+  color: var(--text-Color);
+  font-family: monospace sans-serif;
+}
+
+.container {
+  max-width: 730px;
+  margin: auto;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  margin-top: 40px;
+  transition: all 0.1s;
+  background-color: var(--bgc-color);
+  border-radius: 3px;
+  box-shadow: 3px 10px 18px 3px black;
+}
+.search article {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+}
+.search article input {
+  width: 95%;
+  border: none;
+  padding: 20px 10px;
+  outline: none;
+  background-color: transparent;
+  color: var(--variable1);
+}
+.search article .closeBtn {
+  width: 0px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.search article .closeBtn.active {
+  width: 18px;
+}
+.search .search-btn {
+  padding: 15px 40px;
+  border: none;
+  background-color: #0079ff;
+  cursor: pointer;
+  border-radius: 7px;
+  color: white;
+  font-size: 18px;
+  margin: 10px 0px;
+}
+.search .search-btn:hover {
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: all 0.3s;
+  border: 1px solid red;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.box h1 {
+  color: black;
+}
+.box .sun {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.box .sun img {
+  width: 18px;
+}
+.box .sun p {
+  color: var(--sun);
+}
+.box .moon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.box .moon img {
+  width: 18px;
+  height: 18px;
+}
+.box .moon p {
+  color: var(--sun);
+}
+
+#GitHub {
+  margin-top: 40px;
+  background-color: var(--bgc-color);
+  border-radius: 13px;
+  box-shadow: 3px 10px 18px 3px rgba(0, 0, 0, 0.805);
+  transition: all 0.1s;
+}
+#GitHub .UserBox {
+  padding: 40px 30px;
+  display: flex;
+  align-items: start;
+  gap: 100px;
+}
+#GitHub .UserBox img {
+  width: 20%;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+#GitHub .UserBox .posz {
+  display: flex;
+  align-items: start;
+  gap: 40px;
+}
+#GitHub .UserBox .posz article h1 {
+  font-size: 20px;
+}
+#GitHub .UserBox .posz article a {
+  color: var(--link);
+  font-size: 18px;
+}
+#GitHub .UserBox .posz p {
+  margin: 10px;
+}
+#GitHub .UserBox .b {
+  padding: 20px 0px;
+  font-size: 16px;
+}
+#GitHub .UserBox .ali {
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  justify-content: start;
+  border-radius: 10px;
+  background-color: var(--ali);
+}
+#GitHub .UserBox .ali article {
+  padding: 15px 30px;
+}
+#GitHub .UserBox .ali article p {
+  margin-bottom: 15px;
+}
+#GitHub .UserBox .end {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -30px;
+}
+#GitHub .UserBox .end div article {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#GitHub .UserBox .end div article img {
+  width: 15px;
+}/*# sourceMappingURL=styles.css.map */
